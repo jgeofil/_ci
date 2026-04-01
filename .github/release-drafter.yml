@@ -13,6 +13,6 @@ version-resolver: 'auto'
 # The following are examples.
 # You can remove them and add your own instead.
 
-# - title: "Added"
-#   merge-title: "Added"
-#   label: "enhancement"
+ - title: "Added"
+   merge-title: "Added"
+   label: "enhancement"
