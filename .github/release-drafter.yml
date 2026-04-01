@@ -1,0 +1,18 @@
+# Release Drafter Configuration
+
+# This is the default configuration for Release Drafter.
+# More about Release Drafter can be found at https://github.com/release-drafter/release-drafter
+
+name-template: 'Release $NEXT_RELEASE_VERSION'
+category-template: '### Changes'
+change-template: '- $TITLE (#$NUMBER)'
+version-resolver: 'auto'
+
+# Customize your changelogs here
+
+# The following are examples.
+# You can remove them and add your own instead.
+
+# - title: "Added"
+#   merge-title: "Added"
+#   label: "enhancement"
