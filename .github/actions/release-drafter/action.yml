@@ -1,0 +1,20 @@
+name: Release Drafter
+description: Automatically update release drafts based on pull request labels and commits
+
+inputs:
+  config-name:
+    description: Name of the config file for release-drafter
+    required: false
+    default: release-drafter.yml
+
+runs:
+  using: composite
+  steps:
+    - name: Run Release Drafter
+      uses: release-drafter/release-drafter@v7
+      with:
+        config-name: ${{ inputs.config-name }}
+
+permissions:
+  contents: write
+  pull-requests: read
